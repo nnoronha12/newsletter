@@ -1,0 +1,186 @@
+.home-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 0;
+  max-width: 100%;
+}
+
+.row {
+  margin: 0;
+}
+
+// Main Content Area (Left Side)
+.main-content {
+  background: #FFFFFF;
+  min-height: 100vh;
+  padding: 0;
+  width: 66.666667%;
+  
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+}
+
+.sections-wrapper {
+  padding: 2rem 3rem;
+  
+  @media (max-width: 991px) {
+    padding: 1.5rem 1rem;
+  }
+}
+
+// Sidebar (Right Side)
+.sidebar {
+  background: #FAFAFA;
+  border-left: 1px solid #E5E5E7;
+  padding: 2rem 1.5rem;
+  position: fixed;
+  right: 0;
+  top: 80px;
+  width: 33.333333%;
+  height: calc(100vh - 80px);
+  overflow-y: auto;
+  z-index: 100;
+  
+  @media (max-width: 991px) {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    border-left: none;
+    border-top: 1px solid #E5E5E7;
+    padding: 2rem 1rem;
+  }
+}
+
+.sidebar-sticky {
+  @media (max-width: 991px) {
+    position: relative;
+  }
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1D1D1F;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+// Section Cards
+.section-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E7;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-color: var(--primaryClr);
+    
+    .arrow-icon {
+      transform: translateX(4px);
+      stroke: var(--primaryClr);
+    }
+  }
+}
+
+.section-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.section-info {
+  flex: 1;
+  
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1D1D1F;
+    margin: 0 0 0.25rem 0;
+  }
+  
+  .section-count {
+    font-size: 0.875rem;
+    color: #86868B;
+    margin: 0;
+  }
+}
+
+.arrow-icon {
+  flex-shrink: 0;
+  stroke: #86868B;
+  transition: all 0.3s ease;
+}
+
+// Subscribe Card
+.subscribe-card {
+  background: linear-gradient(135deg, var(--primaryClr) 0%, var(--bthHoverClr) 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  color: #FFFFFF;
+  text-align: center;
+  
+  h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  p {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 1rem 0;
+  }
+}
+
+.btn-subscribe {
+  background: #FFFFFF;
+  color: var(--primaryClr);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  width: 100%;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: var(--primaryLightClr);
+  }
+}
+
+// Custom scrollbar for sidebar
+.sidebar {
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: #F5F5F7;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: #C4C4C4;
+    border-radius: 3px;
+    
+    &:hover {
+      background: var(--primaryClr);
+    }
+  }
+}
+
+

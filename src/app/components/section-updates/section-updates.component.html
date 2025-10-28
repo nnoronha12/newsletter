@@ -1,0 +1,28 @@
+<section id="updates" class="section-updates">
+  <div class="container">
+    <div class="section-header" @fadeInUp>
+      <span class="section-tag">Solutions+ AI Updates</span>
+      <h2 class="section-title">Building the Future of Intelligent Operations</h2>
+    </div>
+
+    <div class="updates-grid">
+      <div class="update-card glass-card" @fadeInUp *ngFor="let update of updates">
+        <div class="card-icon">
+          {{ update.icon }}
+        </div>
+
+        <h3 class="card-title">{{ update.title }}</h3>
+        
+        <p class="card-summary">{{ update.summary }}</p>
+
+        <a [routerLink]="['/article', update.id]" class="card-link">
+          <span>Read more</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

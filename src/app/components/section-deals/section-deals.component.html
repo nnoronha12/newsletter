@@ -1,0 +1,39 @@
+<section id="deals" class="section-deals">
+  <div class="container">
+    <div class="section-header" @fadeInUp>
+      <span class="section-tag">Deals & Partnerships</span>
+      <h2 class="section-title">GITEX Milestone</h2>
+    </div>
+
+    <div class="deal-card glass-card" @fadeInUp *ngIf="deal">
+      <div class="card-content">
+        <div class="elite-badge">
+          <span class="badge-icon">🏆</span>
+          <span class="badge-text">Elite Partnership</span>
+        </div>
+
+        <h3 class="card-title">{{ deal.title }}</h3>
+        
+        <p class="card-summary">{{ deal.summary }}</p>
+
+        <div class="card-meta">
+          <span class="meta-item">{{ deal.readTime }}</span>
+          <span class="meta-divider">·</span>
+          <span class="meta-item">{{ deal.date }}</span>
+        </div>
+
+        <a [routerLink]="['/article', deal.id]" class="card-button">
+          <span>Discover Partnership</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <div class="card-image">
+        <img [src]="deal.image" [alt]="deal.title" />
+      </div>
+    </div>
+  </div>
+</section>

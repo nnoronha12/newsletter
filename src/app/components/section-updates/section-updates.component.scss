@@ -1,0 +1,96 @@
+.section-updates {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FAFBFF 50%, #FFFFFF 100%);
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    .section-tag {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: var(--primaryLightClr);
+      color: var(--primaryClr);
+      border-radius: var(--radius-sm);
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      letter-spacing: 0.02em;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      color: var(--text-primary);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+
+  .updates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .update-card {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover {
+        .card-link {
+          color: var(--primaryClr);
+          
+          svg {
+            transform: translateX(4px);
+          }
+        }
+      }
+
+      .card-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        line-height: 1;
+      }
+
+      .card-title {
+        font-size: 1.25rem;
+        line-height: 1.4;
+        color: var(--text-primary);
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        margin-bottom: 0.75rem;
+      }
+
+      .card-summary {
+        font-size: 0.9375rem;
+        line-height: 1.6;
+        color: var(--text-secondary);
+        margin-bottom: 1.5rem;
+        flex-grow: 1;
+      }
+
+      .card-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--text-primary);
+        font-weight: 500;
+        font-size: 0.875rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        align-self: flex-start;
+
+        svg {
+          transition: transform 0.3s ease;
+        }
+      }
+    }
+  }
+}

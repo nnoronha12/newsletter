@@ -1,0 +1,14 @@
+[
+  {
+    "id": "aws-outage",
+    "category": "Global AI News",
+    "title": "AWS Outage Sparks On-Prem Revolution in AI Infrastructure",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJp9fEThwUg4hZ3L181smcs341eXvHVs8rGYZa1iX9HA2bJSdvpqr6dYeKgdp7WrAjeknJIviQBLXRnGcWc5vumynEInR0TBYRw37XUNJnfFQTjc1ez0ETbeNYviMYmEw5N4lkKfKJUomM2ddOlZHFZvKbB4C0UBbygCDVbGXosvDfqqW_SK5FumEsMHec/s16000/Massive%20AWS%20Outage.webp",
+    "summary": "A massive AWS service disruption this month sent shockwaves through the global AI ecosystem — halting workloads for startups and enterprises alike. As major companies scrambled to restore services, a clear pattern emerged: those with on-prem AI infrastructure stayed online.",
+    "content": "The outage, which impacted over 60% of North American AWS users, caused delays for several leading AI platforms dependent on cloud inference APIs. Startups faced cascading failures in chatbots, analytics dashboards, and pipeline jobs.\n\nIn contrast, companies running on-prem or hybrid LLM systems — maintaining localized GPU clusters or data centers — continued uninterrupted. Experts argue this is a turning point, proving that AI's real power lies in self-reliant infrastructure.\n\nThe event has reignited global discussions on digital sovereignty, latency control, and cost predictability — critical pillars behind Solutions+'s AI-native on-prem strategy.",
+    "date": "October 2025",
+    "readTime": "4 min read"
+  }
+]
+
+

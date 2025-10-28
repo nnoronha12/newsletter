@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Solutions+ AI Newsletter</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link id="favicon" rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <style>
+    /* Preloader Styles */
+    #preloader {
+      position: fixed;
+      inset: 0;
+      background: white;
+      z-index: 9999;
+    }
+    
+    #status {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin: -20px 0 0 -20px;
+    }
+    
+    .solutionsLoader {
+      width: 80px !important;
+      margin-inline-start: -45px;
+    }
+    
+    .loaderApi {
+      width: 48px;
+      height: 48px;
+      border: 6px solid #7337FF;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      display: inline-block;
+      box-sizing: border-box;
+      animation: rotation 1s linear infinite;
+    }
+    
+    @keyframes rotation {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    .avatar-sm {
+      height: 3rem;
+      width: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <app-root>
+    <div id="preloader">
+      <div id="status" class="solutionsLoader">
+        <div class="loaderApi avatar-sm" role="status"></div>
+      </div>
+    </div>
+  </app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+</body>
+</html>
+

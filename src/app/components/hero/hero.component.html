@@ -1,0 +1,33 @@
+<section class="hero">
+  <div class="hero-background">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero-content" @fadeInUp>
+      <h1 class="hero-title">
+        The Future of <span class="accent">AI</span> Infrastructure is Here
+      </h1>
+
+      <p class="hero-subtitle">
+        Discover the latest breakthroughs in on-prem AI, Solutions+ innovations, 
+        and strategic partnerships shaping the future of intelligent operations.
+      </p>
+
+      <button class="cta-button" (click)="scrollToContent()">
+        <span>Explore Newsletter</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="scroll-hint" (click)="scrollToContent()">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </div>
+</section>

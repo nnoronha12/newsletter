@@ -1,0 +1,47 @@
+[
+  {
+    "id": "general-chat",
+    "category": "Solutions+ Updates",
+    "title": "General Chat Evolution",
+    "icon": "🔮",
+    "summary": "Now featuring web search, graph generation, and document attachments — all within a single conversation interface.",
+    "content": "Our General Chat platform has evolved into a comprehensive AI assistant that goes beyond simple Q&A. Users can now perform web searches in real-time, generate complex data visualizations and graphs, and attach documents for contextual analysis — all seamlessly integrated within a single conversation thread.\n\nThis unified approach eliminates the need to switch between multiple tools, dramatically improving productivity and user experience. The system leverages our on-prem infrastructure to ensure data privacy while delivering lightning-fast responses.",
+    "date": "October 2025",
+    "readTime": "3 min read"
+  },
+  {
+    "id": "procurement-chat",
+    "category": "Solutions+ Updates",
+    "title": "Procurement Chat Module – Contract Drafting Made Easy",
+    "icon": "📄",
+    "summary": "Draft service agreements, master service agreements, or conditional letters of award directly within chat.",
+    "content": "The Procurement Chat Module revolutionizes contract creation by allowing users to generate legally compliant documents through natural conversation. Simply describe your requirements, and the AI will draft comprehensive service agreements, master service agreements, or conditional letters of award.\n\nThe system understands Solutions+ procurement standards and automatically incorporates required clauses, terms, and conditions. Legal teams can review and approve documents in half the time, while maintaining full compliance with organizational policies.",
+    "date": "October 2025",
+    "readTime": "3 min read"
+  },
+  {
+    "id": "hr-smart-tools",
+    "category": "Solutions+ Updates",
+    "title": "HR Smart Tools Suite",
+    "icon": "👥",
+    "summary": "JD Creation: Generate complete JDs in the Solutions+ format with just three fields. CV Matching: Compare up to 50 candidates against any JD — get top 3 instantly. Candidate Placement: Identify the 3 most suitable departments for referrals.",
+    "content": "The HR Smart Tools Suite transforms talent management with three powerful AI-driven capabilities:\n\n**JD Creation**: Generate comprehensive job descriptions in Solutions+ format by providing just three fields: role title, department, and key responsibilities. The AI automatically adds required competencies, qualifications, and organizational standards.\n\n**CV Matching**: Upload up to 50 candidate CVs and instantly compare them against any job description. The system analyzes skills, experience, and cultural fit to identify the top 3 candidates, complete with detailed scoring and justification.\n\n**Candidate Placement**: For internal referrals or transfers, the AI analyzes candidate profiles and identifies the 3 most suitable departments based on skills alignment, career trajectory, and organizational needs.",
+    "date": "October 2025",
+    "readTime": "5 min read"
+  },
+  {
+    "id": "hr-data-access",
+    "category": "Solutions+ Updates",
+    "title": "HR Data Access for BU Heads",
+    "icon": "📊",
+    "summary": "Query real-time employee performance, RRFs, and promotion data directly via chat.",
+    "content": "Business Unit Heads now have unprecedented access to HR insights through our conversational AI interface. Query real-time data on employee performance metrics, Requisition for Recruitment (RRF) status, promotion pipelines, and team analytics — all through natural language.\n\nThe system maintains strict role-based access controls, ensuring that managers only see data relevant to their teams. Insights are presented with visual dashboards and actionable recommendations, enabling data-driven decision-making without navigating complex HR systems.",
+    "date": "October 2025",
+    "readTime": "3 min read"
+  }
+]
+
+
+
+
+
