@@ -82,6 +82,11 @@
   --svg-filter: invert(22%) sepia(97%) saturate(3844%) hue-rotate(253deg) brightness(103%) contrast(102%);
 }
 
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-family);
   font-weight: var(--body-weight);

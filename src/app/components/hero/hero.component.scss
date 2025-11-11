@@ -1,12 +1,15 @@
 .hero {
   position: relative;
   min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   padding: 0;
-  background: linear-gradient(135deg, #FAFAFA 0%, #FFFFFF 30%, #F5F3FF 60%, #FAF5FF 100%);
+  background: linear-gradient(135deg, #FAFAFA 0%, #F5F3FF 20%, #FFFFFF 35%, #F0EBFF 50%, #F5F3FF 65%, #FAF5FF 80%, #FFFFFF 100%);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 
   .hero-background {
     position: absolute;
@@ -20,22 +23,22 @@
     .gradient-orb {
       position: absolute;
       border-radius: 50%;
-      filter: blur(140px);
-      opacity: 0.12;
+      filter: blur(150px);
+      opacity: 0.18;
       pointer-events: none;
 
       &.orb-1 {
-        width: 900px;
-        height: 900px;
-        background: radial-gradient(circle, rgba(124, 58, 237, 0.25), rgba(168, 85, 247, 0.15) 40%, transparent 70%);
+        width: 1100px;
+        height: 1100px;
+        background: radial-gradient(circle, rgba(124, 58, 237, 0.3), rgba(168, 85, 247, 0.18) 40%, transparent 70%);
         top: -25%;
         right: -20%;
       }
 
       &.orb-2 {
-        width: 800px;
-        height: 800px;
-        background: radial-gradient(circle, rgba(168, 85, 247, 0.2), rgba(196, 181, 253, 0.1) 40%, transparent 70%);
+        width: 1000px;
+        height: 1000px;
+        background: radial-gradient(circle, rgba(168, 85, 247, 0.25), rgba(196, 181, 253, 0.15) 40%, transparent 70%);
         bottom: -20%;
         left: -15%;
       }

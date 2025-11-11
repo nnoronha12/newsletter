@@ -1,48 +1,37 @@
 <div class="home-page">
   <app-navbar></app-navbar>
   
-  <!-- Main Content Area -->
-  <div class="container-fluid">
-    <div class="row g-0">
-      <!-- Left Side - Hero/Featured Article -->
-      <div class="col-lg-8 main-content">
-        <app-hero></app-hero>
-        
-        <!-- Content Sections -->
-        <div id="sections-content" class="sections-wrapper">
-          <app-section-global-news></app-section-global-news>
-          <app-section-updates></app-section-updates>
-          <app-section-deals></app-section-deals>
+  <!-- Main Content Area - Full Width -->
+  <div class="main-content-full">
+    <app-hero></app-hero>
+    
+    <!-- Content Sections -->
+    <div id="sections-content" class="sections-wrapper">
+      <app-section-global-news></app-section-global-news>
+      <app-section-updates></app-section-updates>
+      <app-section-deals></app-section-deals>
+    </div>
+  </div>
+  
+  <!-- Right Side - Sections Navigation -->
+  <div class="sidebar">
+    <div class="sidebar-sticky">
+      <h3 class="sidebar-title">Sections</h3>
+      
+      <!-- Section Cards - Dynamic -->
+      <div class="section-card" 
+           *ngFor="let section of sections" 
+           (click)="navigateToSection(section)">
+        <div class="section-icon">{{ section.icon }}</div>
+        <div class="section-info">
+          <h4>{{ section.title }}</h4>
+          <p class="section-count">{{ section.count }} {{ section.count === 1 ? 'Article' : 'Articles' }}</p>
         </div>
+        <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
       </div>
       
-      <!-- Right Side - Sections Navigation -->
-      <div class="col-lg-4 sidebar">
-        <div class="sidebar-sticky">
-          <h3 class="sidebar-title">Sections</h3>
-          
-          <!-- Section Cards - Dynamic -->
-          <div class="section-card" 
-               *ngFor="let section of sections" 
-               (click)="navigateToSection(section)">
-            <div class="section-icon">{{ section.icon }}</div>
-            <div class="section-info">
-              <h4>{{ section.title }}</h4>
-              <p class="section-count">{{ section.count }} {{ section.count === 1 ? 'Article' : 'Articles' }}</p>
-            </div>
-            <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-          </div>
-          
-          <!-- Subscribe Section -->
-          <div class="subscribe-card">
-            <h4>📧 Subscribe</h4>
-            <p>Get the latest AI insights delivered to your inbox</p>
-            <button class="btn-subscribe">Subscribe Now</button>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   

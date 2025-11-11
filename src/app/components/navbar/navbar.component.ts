@@ -11,23 +11,10 @@ import { RouterLink } from '@angular/router';
 })
 export class NavbarComponent {
   isScrolled = false;
-  isMobileMenuOpen = false;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.isScrolled = window.scrollY > 50;
-  }
-
-  toggleMobileMenu() {
-    this.isMobileMenuOpen = !this.isMobileMenuOpen;
-  }
-
-  scrollToSection(sectionId: string) {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      this.isMobileMenuOpen = false;
-    }
   }
 }
 

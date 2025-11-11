@@ -4,20 +4,6 @@
       <a routerLink="/" class="logo">
         <img src="https://solutionsplus.ae/wp-content/uploads/2023/02/Solutions-Logo.png" alt="Solutions+" class="logo-image" />
       </a>
-
-      <div class="nav-links" [class.mobile-open]="isMobileMenuOpen">
-        <a (click)="scrollToSection('global-news')" class="nav-link">Global AI News</a>
-        <a (click)="scrollToSection('updates')" class="nav-link">Solutions+ Updates</a>
-        <a (click)="scrollToSection('deals')" class="nav-link">Deals</a>
-      </div>
-
-      <button class="mobile-menu-btn" (click)="toggleMobileMenu()">
-        <span class="menu-icon" [class.open]="isMobileMenuOpen">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </button>
     </div>
   </div>
 </nav>
